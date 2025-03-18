@@ -1,0 +1,41 @@
+<clickhouse>
+    <remote_servers>
+        <otus_cluster>
+            <shard>
+                <internal_replication>true</internal_replication>
+                    <replica>
+                        <host>shard1_replica1</host>
+                        <port>9000</port>
+                    </replica>
+                    <replica>
+                        <host>shard1_replica2</host>
+                        <port>9000</port>
+                    </replica>
+            </shard>
+            <shard>
+                <internal_replication>true</internal_replication>
+                    <replica>
+                        <host>shard2_replica1</host>
+                        <port>9000</port>
+                    </replica>
+                    <replica>
+                        <host>shard2_replica2</host>
+                        <port>9000</port>
+                    </replica>
+            </shard>
+        </otus_cluster>
+</remote_servers>
+    <zookeeper>
+        <node index="1">
+            <host>zookeeper</host>
+            <port>2181</port>
+        </node>
+    </zookeeper>
+    <macros>
+        <shard>shard02</shard>
+        <replica>shard2_replica1</replica>
+        <cluster>otus_cluster</cluster>
+    </macros>
+</clickhouse>
+
+
