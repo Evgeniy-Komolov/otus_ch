@@ -4,8 +4,8 @@
       <s3_disk>
           <type>s3</type>
           <endpoint>https://storage.yandexcloud.net/otus-hw-13/</endpoint>
-          <access_key_id>ACCESS_KEY_ID</access_key_id>
-          <secret_access_key>SECRET_ACCESS_KEY</secret_access_key>
+          <access_key_id>ID</access_key_id>
+          <secret_access_key>KEY</secret_access_key>
           <bucket>YOUR_BUCKET_NAME</bucket>
           <path>/var/lib/clickhouse/disks/s3_disk/</path>
       </s3_disk>
