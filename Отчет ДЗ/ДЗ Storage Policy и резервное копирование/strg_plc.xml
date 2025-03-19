@@ -1,0 +1,29 @@
+<clickhouse>
+  <storage_configuration>
+    <disks>
+      <s3_disk>
+          <type>s3</type>
+          <endpoint>https://storage.yandexcloud.net/otus-hw-13/</endpoint>
+          <access_key_id>YCAJEeMNArSEY724mYEWdTHPr</access_key_id>
+          <secret_access_key>YCOE2LTnfEwQ2BYzxjIjcfRzW8bl8iQ8f5XGTIs5</secret_access_key>
+          <bucket>YOUR_BUCKET_NAME</bucket>
+          <path>/var/lib/clickhouse/disks/s3_disk/</path>
+      </s3_disk>
+        <s3_cache>
+            <type>cache</type>
+            <disk>s3_disk</disk>
+            <path>/var/lib/clickhouse/disks/s3_cache/</path>
+            <max_size>4Gi</max_size>
+        </s3_cache>
+    </disks>
+    <policies>
+      <s3_main> <!-- name for new storage policy -->
+        <volumes>
+          <main>
+            <disk>s3_disk</disk>
+          </main>
+        </volumes>
+      </s3_main>
+    </policies>
+  </storage_configuration>
+</clickhouse>
