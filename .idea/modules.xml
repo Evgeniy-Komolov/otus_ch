@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../dataops_connect/.idea/dataops_connect.iml" filepath="$PROJECT_DIR$/../dataops_connect/.idea/dataops_connect.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/otus_ch.iml" filepath="$PROJECT_DIR$/.idea/otus_ch.iml" />
     </modules>
   </component>
