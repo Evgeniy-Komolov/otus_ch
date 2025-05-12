@@ -92,3 +92,4 @@ env
 # temp storage for xml
 generated/*
 !generated/.gitkeep
+/.idea
